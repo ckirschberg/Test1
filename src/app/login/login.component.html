@@ -1,0 +1,18 @@
+<p>login works!</p>
+
+<p>No Casper still wants to be Captain</p>
+
+<form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+
+    <input type="text" formControlName="username" 
+        placeholder="Username" required/>
+
+    <input type="password" formControlName="password" 
+        placeholder="Password" required/>
+
+    <button type="submit">Login</button>
+
+    {{loginForm.valid}}
+</form>
+
+<button (click)="onButtonClick()">Click me</button>
